@@ -16,6 +16,6 @@ public class SayingHello {
         System.out.println("Hello! What is your name?");
         name = input.next();
         System.out.println("Hello, " + name +"! It's nice to meet you!");
-
+        input.close();
     }
 }
