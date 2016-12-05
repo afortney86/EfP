@@ -17,7 +17,6 @@ public class PizzaParty {
         int pizzas;
         int slicesPerPizza;
 
-
         System.out.print("How many people will be attending? ");
         people = input.nextInt();
 
@@ -27,11 +26,13 @@ public class PizzaParty {
         System.out.print("How many slices per pizza? ");
         slicesPerPizza = input.nextInt();
 
+        int totalPieces = totalPieces(pizzas, slicesPerPizza);
+
         System.out.println(people + " people with " + pizzas + " pizzas");
 
-        System.out.println("You have " + totalPieces(pizzas, slicesPerPizza) + " total slices of pizza");
+        System.out.println("You have " + totalPieces + " total slices of pizza");
 
-        System.out.println("Each person gets " + slicesPerPerson(totalPieces(pizzas, slicesPerPizza), people) + " pieces of pizza");
+        System.out.println("Each person gets " + slicesPerPerson(totalPieces, people) + " pieces of pizza");
     }
     private static int totalPieces(int pizzas, int slicesPerPizza){
         return pizzas * slicesPerPizza;
