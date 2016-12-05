@@ -3,7 +3,7 @@
  *
  * Write a program to evenly divide pizzas. Prompt for the number of people, the number of pizzas
  * and the number of slices per pizza. Ensure the number of pieces comes out even.
- * Display the number of pieces of pizza each persone should get. If there are left overs, show the number
+ * Display the number of pieces of pizza each person should get. If there are left overs, show the number
  * of left over pieces.
  *
  */
@@ -16,11 +16,28 @@ public class PizzaParty {
         int people;
         int pizzas;
         int slicesPerPizza;
-        int slicesPerPerson;
 
 
+        System.out.print("How many people will be attending? ");
+        people = input.nextInt();
 
+        System.out.print("How many pizzas will be there? ");
+        pizzas = input.nextInt();
 
+        System.out.print("How many slices per pizza? ");
+        slicesPerPizza = input.nextInt();
 
+        System.out.println(people + " people with " + pizzas + " pizzas");
+
+        System.out.println("You have " + totalPieces(pizzas, slicesPerPizza) + " total slices of pizza");
+
+        System.out.println("Each person gets " + slicesPerPerson(totalPieces(pizzas, slicesPerPizza), people) + " pieces of pizza");
+    }
+    private static int totalPieces(int pizzas, int slicesPerPizza){
+        return pizzas * slicesPerPizza;
+    }
+
+    private static int slicesPerPerson(int totalPieces, int people){
+        return  totalPieces / people;
     }
 }
