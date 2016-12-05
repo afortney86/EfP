@@ -16,16 +16,16 @@ public class MadLibs {
         String adjective;
         String adverb;
 
-        System.out.println("Enter a noun: ");
+        System.out.print("Enter a noun: ");
         noun = input.next();
-        System.out.println("Enter a verb: ");
+        System.out.print("Enter a verb: ");
         verb = input.next();
-        System.out.println("Enter an adjective: ");
+        System.out.print("Enter an adjective: ");
         adjective = input.next();
-        System.out.println("Enter an adverb: ");
+        System.out.print("Enter an adverb: ");
         adverb = input.next();
 
-        System.out.println("Do you " + verb + " your " + adjective + noun + adverb + "? That's hilarious!");
+        System.out.println("Do you " + verb + " your " + adjective +" "+ noun +" "+ adverb + "? That's hilarious!");
 
     }
 }
