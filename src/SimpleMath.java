@@ -29,7 +29,6 @@ public class SimpleMath {
     private static int addition(int num1, int num2) {
         return num1 + num2;
     }
-
     private static int subtraction(int num1, int num2) {
         return num1 - num2;
     }
