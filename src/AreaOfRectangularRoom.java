@@ -14,24 +14,17 @@ public class AreaOfRectangularRoom {
         Scanner input = new Scanner(System.in);
         int length;
         int width;
-        int area;
-        double squareMeters;
-
-
 
         System.out.print("What is the length of the room in feet? ");
         length = input.nextInt();
         System.out.print("What is the width of the room in feet? ");
         width = input.nextInt();
 
-        area = squareFeet(length, width);  //Dont like these here
-        squareMeters = squareMeters(area); // same
-
         System.out.println("You entered dimensions of " + length + " feet by " + width + " feet.");
 
         System.out.println("The area is:");
-        System.out.println(area + " square feet");
-        System.out.println(squareMeters + "square meters"); //need to round this to the nearest thousandth
+        System.out.println(squareFeet(length, width) + " square feet");
+        System.out.println(squareMeters(length, width) + "square meters"); //need to round this to the nearest thousandth
 
 
 
@@ -40,10 +33,10 @@ public class AreaOfRectangularRoom {
     private static int squareFeet(int length, int width){
         return length * width;
     }
-    private static double squareMeters(int area){
+    private static double squareMeters(int length, int width){
         double conversionFactor = 0.09290304;
 
-        return area * conversionFactor;
+        return (length * width) * conversionFactor;
     }
 
 
