@@ -25,7 +25,7 @@ public class MadLibs {
         System.out.println("Enter an adverb: ");
         adverb = input.next();
 
-        System.out.println("Do you " + verb + " your " + adjective + noun + adverb + "? Thats's hilarious!");
+        System.out.println("Do you " + verb + " your " + adjective + noun + adverb + "? That's hilarious!");
 
     }
 }
