@@ -11,11 +11,31 @@
  * US dollars   euros       exchange rate  exchange rate
  *                          in euros        in US dollars.
  */
+
+import java.util.Scanner;
 public class CurrencyConversion {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
         double euros;
         double euroExRate;
-        double
+        double dollarExRate = 137.51;
+        double dollars;
+
+        System.out.println("How many euros are you exchanging?");
+        euros = input.nextDouble();
+
+        System.out.println("What is the exchange rate in euros?");
+        euroExRate = input.nextDouble();
+
+
+
+
+
+        dollars = euros * euroExRate / dollarExRate;
+
+
+
+
 
     }
 }
