@@ -7,9 +7,11 @@
  */
 
 import java.util.Scanner;
+import java.text.DecimalFormat;
 public class SelfCheckout {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        DecimalFormat df = new DecimalFormat("###.##");
         int price1;
         int price2;
         int price3;
@@ -45,11 +47,11 @@ public class SelfCheckout {
 
         subtotal += getTotalPrice(price3, quantity3);
 
-        System.out.println("Subtotal : $" + subtotal);
+        System.out.println("Subtotal : $" + df.format(subtotal));
 
         totalTax = taxAmount(subtotal, tax);
 
-        System.out.println(totalTax);
+        System.out.println("Tax: $" + totalTax);
 
         grandTotal = subtotal + totalTax;
 
