@@ -15,7 +15,7 @@ public class PaintCalculator {
         int area;       // get the area divide by 350 and round up to nearest whole number
         int length;
         int width;
-        int gallons;
+        double gallons;
 
         System.out.println("What is the length of the room?");
         length = input.nextInt();
@@ -25,9 +25,11 @@ public class PaintCalculator {
 
         area = findArea(length, width);
 
-        System.out.println(area);
+        System.out.println("Paint to cover " + area + " square feet.");
 
-        gallons = area / rate;
+        gallons = (double) area / rate;
+
+        gallons = Math.ceil(gallons);
 
         System.out.println(gallons);
 
