@@ -1,4 +1,4 @@
-package ChapterOne; /**
+package ChapterTwo; /**
  * Created by anthonyfortney on 12/5/16.
  * Write a program that prompts for two numbers.
  * Print the sum, difference, product, and quotient of those numbers.

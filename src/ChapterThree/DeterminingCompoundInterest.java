@@ -1,4 +1,4 @@
-package ChapterOne; /**
+package ChapterThree; /**
  * Created by anthonyfortney on 12/13/16.
  *
  * Write a program to compute the value of an investment compounded over time.

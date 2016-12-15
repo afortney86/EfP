@@ -1,4 +1,4 @@
-package ChapterOne; /**
+package ChapterThree; /**
  * Created by anthonyfortney on 12/5/16.
  *
  * Calculate gallon of paint needed to paint the ceiling of a room. Prompt for the length and width,

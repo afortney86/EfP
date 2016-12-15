@@ -1,4 +1,4 @@
-package ChapterOne; /**
+package ChapterThree; /**
  * Created by anthonyfortney on 12/5/16.
  * Create a program that calculates the area of a room. Prompt the user for the length and width of the room in feet.
  * Then display the area in both square feet and square meters
