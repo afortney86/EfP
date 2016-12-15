@@ -1,4 +1,4 @@
-/**
+package ChapterOne; /**
  * Created by anthonyfortney on 12/4/16.
  *
  * Create a program that prompts for an input string and

@@ -1,4 +1,4 @@
-/**
+package ChapterOne; /**
  * Created by anthonyfortney on 12/6/16.
  *
  * Create a simple self-checkout system. Prompt for the prices and quantities of three items. Calculate the subtotal of the items.

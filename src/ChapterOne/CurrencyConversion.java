@@ -1,4 +1,4 @@
-/**
+package ChapterOne; /**
  * Created by anthonyfortney on 12/6/16.
  *
  * Write a program that converts currency. specifically, convert euros to U.S. dollars.

@@ -1,4 +1,4 @@
-/**
+package ChapterOne; /**
  * Created by anthonyfortney on 12/12/16.
  *
  * Create a program that computes simple interest. Prompt for the principal amount, the rate as a percentage,

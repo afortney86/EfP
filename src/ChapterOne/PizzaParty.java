@@ -1,4 +1,4 @@
-/**
+package ChapterOne; /**
  * Created by anthonyfortney on 12/5/16.
  *
  * Write a program to evenly divide pizzas. Prompt for the number of people, the number of pizzas
